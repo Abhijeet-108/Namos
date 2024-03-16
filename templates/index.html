@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Legal Chatbot</title>
+</head>
+<body>
+    <h1>Legal Chatbot</h1>
+    <form method="POST">
+        <div>
+            <label for="user_input">Enter your question:</label>
+            <input type="text" id="user_input" name="user_input">
+        </div>
+        <button type="submit">Ask</button>
+    </form>
+    {% if response %}
+        <p>Chatbot response: {{ response }}</p>
+    {% endif %}
+</body>
+</html>
